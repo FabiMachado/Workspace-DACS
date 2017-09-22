@@ -1,0 +1,22 @@
+<form action="/users/save" method="POST">
+
+
+<input type="hidden" name="id" value="{{data.id}}">
+
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Nome</label>
+  <div class="col-10">
+  	<input class="form-control" type="text" name="nome" value="{{data}}" id="example-text-input">
+  </div>
+</div>
+	
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Email</label>
+  <div class="col-10">
+    <input class="form-control" type="email" name="email" value="{{data}}" id="example-email-input">
+  </div>
+</div>
+
+<input type="submit" value="Enviar"/>
+
+</form>
